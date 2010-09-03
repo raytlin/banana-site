@@ -1,0 +1,29 @@
+<h1>Listing bananas</h1>
+
+<table>
+  <tr>
+    <th>Number of bananas</th>
+    <th>When bought</th>
+    <th>When brown</th>
+    <th>User</th>
+	<th>Number brown ></th>
+  </tr>
+
+<% @bananas.each do |banana| %>
+  
+  <tr>
+    <td><%=h banana.number_of_bananas %></td>
+    <td><%=h banana.when_bought %></td>
+    <td><%=h banana.when_brown %></td>
+    <td><%=h banana.user_id %></td>
+	<td><%= banana.brown_bananas %> </td>
+    <td><%= link_to 'Show', banana %></td>
+    <td><%= link_to 'Edit', edit_banana_path(banana) %></td>
+    <td><%= link_to 'Destroy', banana, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New banana', new_banana_path %>

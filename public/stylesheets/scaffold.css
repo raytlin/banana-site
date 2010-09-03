@@ -1,0 +1,85 @@
+body { background-color: #fff; color: #333; }
+
+
+
+body, p, ol, ul, td {
+  font-family: monospace; verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+  line-height: 2em;
+	
+
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a { color: #000; }
+	a:visited { color: #666; }
+	a:hover { color: #666; }
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+#linkbar {
+	background-image:url('../images/stripe.png'); 
+	background-repeat:repeat-x; 
+	height:32px; 
+	text-align:center; 
+	color:#FFFFFF;
+	
+}
+
+#maintext {
+	border:dotted 1px #555;
+	border-top:none;
+	border-bottom:none;
+	margin-left:auto;
+	margin-right:auto;
+	width:800px;
+	height:100%;
+	
+	padding:5px;
+	}
+
+a.linkcolor {color:white; text-decoration:underline;}
+a.linkcolor:hover {color:white; text-decoration:underline; background-color:black; }
+a.linkcolor:visited {	color:white; text-decoration:underline; font-weight:bolder; }	
+a.linkcolor:active {color:white; text-decoration:underline; background-color:black}
+	
+#footer { position:absolute; bottom:10px; text-align:center; }

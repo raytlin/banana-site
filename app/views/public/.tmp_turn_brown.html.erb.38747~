@@ -1,0 +1,18 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Untitled Document</title>
+	</head>
+	<body>
+		
+		<h1> Have you either finished your bananas yet or have your bananas turned brown? </h1> 
+		<% form_for @banana, :url => { :action => "create_brown" } do |f| %>
+			<%= f.error_messages %>
+		    How many bananas turned brown(if you finished all your bananas leave it at "0") <%= f.text_field :brown_bananas %> <br />
+		    When did the bananas turn brown or when did you finish them? <%= f.date_select :when_brown %> <br />
+		    <%= f.submit "Submit" %> <br />
+		<% end %>
+				
+	</body>
+</html>

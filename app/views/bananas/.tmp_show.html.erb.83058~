@@ -1,0 +1,23 @@
+<p>
+  <b>Number of bananas:</b>
+  <%=h @banana.number_of_bananas %>
+</p>
+
+<p>
+  <b>When bought:</b>
+  <%=h @banana.when_bought %>
+</p>
+
+<p>
+  <b>When brown:</b>
+  <%=h @banana.when_brown %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%=h @banana.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_banana_path(@banana) %> |
+<%= link_to 'Back', bananas_path %>

@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Banana Tracker: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'scaffold' %>
+<link rel="Shortcut Icon" href="../images/favicon.ico" /> 
+<link rel="Bookmark" href="../images/favicon.ico" /> 
+
+<meta name="keywords" content="banana tracker, bananas, banana" /> 
+    <meta name="description" content="Never eat a bruised or brown banana again.®" /> 
+    <meta name="abstract" content="Never eat a bruised or brown banana again.®" /> 
+    <meta name="robots" content="index,follow" /> 
+
+</head>
+<body>
+
+<p style="text-align:right" >
+<% if session[:user_name] %>
+	hallo! <%= session[:user_name] %>
+<% end -%>	
+<% if session[:user_id] -%>	
+ | <%= link_to('log out', :controller => 'public', :action => 'logout' )%> |  
+<% else -%>
+ | <%= link_to('sign up!', :controller => 'public', :action => 'new_user' )%> | <%= link_to('log in', :controller => 'public', :action => 'login' )%> | 
+<% end -%> 
+| <%= link_to("Home", :controller => 'public', :action => 'index' )%> |
+</p>
+
+<%= link_to( image_tag("../images/banana-logo.png", :border=>0), :action => "index") %>
+
+<div id="linkbar" >
+<p style="font-weight:bolder; position:relative; top:1px; font-size:1.2em"> | <%= link_to("MAKE NEW TRACKER", {:action => "new_tracker"}, :class => "linkcolor") %> | <%= link_to("FINISH TRACKER IN PROGRESS", {:action => "turn_brown"}, :class => "linkcolor" )%> | <%= link_to("VIEW BANANA ANALYSIS", {:action => "analysis"}, :class => "linkcolor")%> | </p>
+</div>
+<p style="color: green"><%= notice %></p>
+
+<div id="maintext">
+
+<%= yield %>
+
+</div>
+
+</body>
+</html>

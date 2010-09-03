@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Untitled Document</title>
+	</head>
+	<body>
+		<% numberBananasEaten = 0%>
+		<% numberDaysUntilBrown = 0%>
+		<% numberOfTrackers = 0%>
+		<% totalEaten = 0 %>
+		<% totalDaysUntilBrown = 0 %>
+				
+		<% for banana in @bananas %>
+			<% if banana.user_id == session[:user_id] && banana.when_brown != nil %>
+				<% numberBananasEaten = banana.number_of_bananas - banana.brown_bananas %>
+				<% numberDaysUntilBrown = ((banana.when_brown - banana.when_bought) / 60 / 60 / 24).to_i  %>
+				<% totalEaten = totalEaten + numberBananasEaten %>
+				<% totalDaysUntilBrown = totalDaysUntilBrown + numberDaysUntilBrown %>
+				<% numberOfTrackers = numberOfTrackers + 1 %>
+			<% end %>
+		<% end %>
+		
+		<% if totalEaten == 0 || totalDaysUntilBrown == 0 %>
+			You will need to make a new <%= link_to("banana tracker", :action => "new_tracker" )%> or finish updating an <%= link_to("existing one", :action => "turn_brown") %> in order to see some sort of analysis!
+		<% else %>
+			<h1> Interesting banana related info about yourself!</h1>
+			<p> On average, you eat <%= totalEaten/totalDaysUntilBrown %> bananas per day! </p><br />
+			<p> On average, your bananas turn brown after <%= totalDaysUntilBrown/numberOfTrackers %> days! </p><br />
+			<h2> You should buy <%= totalEaten/totalDaysUntilBrown * totalDaysUntilBrown/numberOfTrackers %> bananas every <%= totalDaysUntilBrown/numberOfTrackers %> days!</h2>
+		<% end %>
+	</body>
+</html>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  number_of_bananas: 1
+  when_bought: 2010-09-01 20:25:58
+  when_brown: 2010-09-01 20:25:58
+  user_id: 1
+
+two:
+  number_of_bananas: 1
+  when_bought: 2010-09-01 20:25:58
+  when_brown: 2010-09-01 20:25:58
+  user_id: 1

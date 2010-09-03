@@ -1,0 +1,11 @@
+
+
+	
+	<body>
+		<h1>Banana Tracker Administration </h1>
+		
+		<%= link_to("Users", :controller => "users")%><br />
+		<%= link_to("Bananas", :controller => "bananas") %> <br />
+		<%= link_to("Admin Users", :controller => "admin_users") %> <br />
+	</body>
+

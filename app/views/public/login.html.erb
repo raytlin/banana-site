@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Untitled Document</title>
+	</head>
+	<body>
+		<%= error_messages_for :user %>
+
+<p>Not a user yet? <%= link_to("Sign Up!", :controller => "public", :action => "new_user" )%> </p>
+	
+<% form_for :user, @user, :url => { :action => "send_login" } do |f| %>
+  <p>
+    <b>username</b><br />
+    <%= f.text_field :username %>
+  </p>
+
+  <p>
+    <b>Password</b><br />
+    <%= f.password_field :password %>
+  </p>
+  
+  <p>
+    <%= f.submit "Submit" %>
+  </p>
+<% end %>
+	</body>
+</html>
