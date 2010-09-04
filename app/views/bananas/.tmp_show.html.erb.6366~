@@ -5,19 +5,19 @@
 
 <p>
   <b>When bought:</b>
-  <%=h @banana.when_bought.strftime("%a, %b %d") %>
+  <%=h @banana.when_bought %>
 </p>
 
 <p>
   <b>When brown:</b>
-  <%=h @banana.when_brown.strftime("%a, %b %d") %>
+  <%=h @banana.when_brown %>
 </p>
 <p> number brown <br />
 <%= @banana.brown_bananas %>
 </p>
 <p>
   <b>User:</b>
-  <%=h @banana.user.username %>
+  <%=h @banana.user_id %>
 </p>
 
 
