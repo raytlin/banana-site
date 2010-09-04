@@ -14,8 +14,8 @@
   <tr>
     <td><%=h banana.number_of_bananas %></td>
     <td><%=h banana.when_bought.strftime("%a, %b %d") %></td>
-    <td><%=h banana.when_brown.strftime("%a, %b %d") %></td>
-    <td><%= banana.user.username %></td>
+    <td><%=h banana.when_brown.strftime("%a, %b %d") if banana.when_brown != nil %></td>
+    <td><%= banana.user.username if banana.user %></td>
 	<td><%= banana.brown_bananas %> </td>
     <td><%= link_to 'Show', banana %></td>
     <td><%= link_to 'Edit', edit_banana_path(banana) %></td>

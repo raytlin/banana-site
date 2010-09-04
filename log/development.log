@@ -11183,3 +11183,236 @@ Rendering bananas/index
   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
   [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
 Completed in 52ms (View: 36, DB: 3) | 200 OK [http://127.0.0.1/bananas]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-09-03 21:38:00) [GET]
+Redirected to http://127.0.0.1:3001/admin/menu
+Completed in 12ms (DB: 0) | 302 Found [http://127.0.0.1/admin]
+
+
+Processing AdminController#menu (for 127.0.0.1 at 2010-09-03 21:38:00) [GET]
+Rendering template within layouts/admin
+Rendering admin/menu
+Completed in 71ms (View: 69, DB: 0) | 200 OK [http://127.0.0.1/admin/menu]
+
+
+Processing BananasController#index (for 127.0.0.1 at 2010-09-03 21:38:03) [GET]
+  [4;36;1mBanana Load (1.0ms)[0m   [0;1mSELECT * FROM "bananas" [0m
+Rendering template within layouts/bananas
+Rendering bananas/index
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 178ms (View: 127, DB: 3) | 200 OK [http://127.0.0.1/bananas]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-03 21:43:03) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 25ms (View: 23, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-09-03 21:43:06) [GET]
+Redirected to http://127.0.0.1:3001/admin/menu
+Completed in 12ms (DB: 0) | 302 Found [http://127.0.0.1/admin]
+
+
+Processing AdminController#menu (for 127.0.0.1 at 2010-09-03 21:43:06) [GET]
+Rendering template within layouts/admin
+Rendering admin/menu
+Completed in 16ms (View: 13, DB: 0) | 200 OK [http://127.0.0.1/admin/menu]
+
+
+Processing BananasController#index (for 127.0.0.1 at 2010-09-03 21:43:08) [GET]
+  [4;36;1mBanana Load (1.0ms)[0m   [0;1mSELECT * FROM "bananas" [0m
+Rendering template within layouts/bananas
+Rendering bananas/index
+
+ActionView::TemplateError (undefined method `username' for nil:NilClass) on line #18 of app/views/bananas/index.html.erb:
+15:     <td><%=h banana.number_of_bananas %></td>
+16:     <td><%=h banana.when_bought.strftime("%a, %b %d") %></td>
+17:     <td><%=h banana.when_brown.strftime("%a, %b %d") %></td>
+18:     <td><%= banana.User.username %></td>
+19: 	<td><%= banana.brown_bananas %> </td>
+20:     <td><%= link_to 'Show', banana %></td>
+21:     <td><%= link_to 'Edit', edit_banana_path(banana) %></td>
+
+    app/views/bananas/index.html.erb:18
+    app/views/bananas/index.html.erb:12:in `each'
+    app/views/bananas/index.html.erb:12
+    app/controllers/bananas_controller.rb:10:in `index'
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (59.6ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing BananasController#index (for 127.0.0.1 at 2010-09-03 21:44:05) [GET]
+  [4;36;1mBanana Load (1.0ms)[0m   [0;1mSELECT * FROM "bananas" [0m
+Rendering template within layouts/bananas
+Rendering bananas/index
+
+ActionView::TemplateError (undefined method `user' for #<Banana:0x6427620>) on line #18 of app/views/bananas/index.html.erb:
+15:     <td><%=h banana.number_of_bananas %></td>
+16:     <td><%=h banana.when_bought.strftime("%a, %b %d") %></td>
+17:     <td><%=h banana.when_brown.strftime("%a, %b %d") %></td>
+18:     <td><%= banana.user.username %></td>
+19: 	<td><%= banana.brown_bananas %> </td>
+20:     <td><%= link_to 'Show', banana %></td>
+21:     <td><%= link_to 'Edit', edit_banana_path(banana) %></td>
+
+    app/views/bananas/index.html.erb:18
+    app/views/bananas/index.html.erb:12:in `each'
+    app/views/bananas/index.html.erb:12
+    app/controllers/bananas_controller.rb:10:in `index'
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (57.6ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing BananasController#index (for 127.0.0.1 at 2010-09-03 21:44:14) [GET]
+  [4;35;1mBanana Load (2.0ms)[0m   [0mSELECT * FROM "bananas" [0m
+Rendering template within layouts/bananas
+Rendering bananas/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 106ms (View: 92, DB: 3) | 200 OK [http://127.0.0.1/bananas]
+
+
+Processing BananasController#index (for 127.0.0.1 at 2010-09-03 21:45:56) [GET]
+  [4;36;1mBanana Load (2.0ms)[0m   [0;1mSELECT * FROM "bananas" [0m
+Rendering template within layouts/bananas
+Rendering bananas/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+
+ActionView::TemplateError (undefined method `username' for nil:NilClass) on line #18 of app/views/bananas/index.html.erb:
+15:     <td><%=h banana.number_of_bananas %></td>
+16:     <td><%=h banana.when_bought.strftime("%a, %b %d") %></td>
+17:     <td><%=h banana.when_brown.strftime("%a, %b %d") %></td>
+18:     <td><%= banana.user.username %></td>
+19: 	<td><%= banana.brown_bananas %> </td>
+20:     <td><%= link_to 'Show', banana %></td>
+21:     <td><%= link_to 'Edit', edit_banana_path(banana) %></td>
+
+    app/views/bananas/index.html.erb:18
+    app/views/bananas/index.html.erb:12:in `each'
+    app/views/bananas/index.html.erb:12
+    app/controllers/bananas_controller.rb:10:in `index'
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (119.1ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing BananasController#index (for 127.0.0.1 at 2010-09-03 21:46:06) [GET]
+  [4;36;1mBanana Load (2.0ms)[0m   [0;1mSELECT * FROM "bananas" [0m
+Rendering template within layouts/bananas
+Rendering bananas/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+
+ActionView::TemplateError (undefined method `username' for nil:NilClass) on line #18 of app/views/bananas/index.html.erb:
+15:     <td><%=h banana.number_of_bananas %></td>
+16:     <td><%=h banana.when_bought.strftime("%a, %b %d") %></td>
+17:     <td><%=h banana.when_brown.strftime("%a, %b %d") %></td>
+18:     <td><%= banana.user.username %></td>
+19: 	<td><%= banana.brown_bananas %> </td>
+20:     <td><%= link_to 'Show', banana %></td>
+21:     <td><%= link_to 'Edit', edit_banana_path(banana) %></td>
+
+    app/views/bananas/index.html.erb:18
+    app/views/bananas/index.html.erb:12:in `each'
+    app/views/bananas/index.html.erb:12
+    app/controllers/bananas_controller.rb:10:in `index'
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (56.6ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing BananasController#index (for 127.0.0.1 at 2010-09-03 21:49:16) [GET]
+  [4;36;1mBanana Load (2.0ms)[0m   [0;1mSELECT * FROM "bananas" [0m
+Rendering template within layouts/bananas
+Rendering bananas/index
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 6) [0m
+
+ActionView::TemplateError (undefined method `strftime' for nil:NilClass) on line #17 of app/views/bananas/index.html.erb:
+14:   <tr>
+15:     <td><%=h banana.number_of_bananas %></td>
+16:     <td><%=h banana.when_bought.strftime("%a, %b %d") %></td>
+17:     <td><%=h banana.when_brown.strftime("%a, %b %d") %></td>
+18:     <td><%= banana.user.username if banana.user %></td>
+19: 	<td><%= banana.brown_bananas %> </td>
+20:     <td><%= link_to 'Show', banana %></td>
+
+    app/views/bananas/index.html.erb:17
+    app/views/bananas/index.html.erb:12:in `each'
+    app/views/bananas/index.html.erb:12
+    app/controllers/bananas_controller.rb:10:in `index'
+    -e:2:in `load'
+    -e:2
+
+Rendered rescues/_trace (56.6ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing BananasController#index (for 127.0.0.1 at 2010-09-03 21:50:13) [GET]
+  [4;35;1mBanana Load (2.0ms)[0m   [0mSELECT * FROM "bananas" [0m
+Rendering template within layouts/bananas
+Rendering bananas/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 6) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 9) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 9) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 10) [0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 84ms (View: 66, DB: 6) | 200 OK [http://127.0.0.1/bananas]
+
+
+Processing BananasController#show (for 127.0.0.1 at 2010-09-03 21:50:47) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mBanana Load (0.0ms)[0m   [0;1mSELECT * FROM "bananas" WHERE ("bananas"."id" = 15) [0m
+Rendering template within layouts/bananas
+Rendering bananas/show
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Completed in 103ms (View: 88, DB: 0) | 200 OK [http://127.0.0.1/bananas/15]
+
+
+Processing BananasController#index (for 127.0.0.1 at 2010-09-03 21:50:50) [GET]
+  [4;36;1mBanana Load (2.9ms)[0m   [0;1mSELECT * FROM "bananas" [0m
+Rendering template within layouts/bananas
+Rendering bananas/index
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 6) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 9) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 9) [0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 10) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 82ms (View: 64, DB: 7) | 200 OK [http://127.0.0.1/bananas]

@@ -10,14 +10,14 @@
 
 <p>
   <b>When brown:</b>
-  <%=h @banana.when_brown.strftime("%a, %b %d") %>
+  <%=h @banana.when_brown.strftime("%a, %b %d") if @banana.when_brown != nil %>
 </p>
 <p> number brown <br />
 <%= @banana.brown_bananas %>
 </p>
 <p>
   <b>User:</b>
-  <%=h @banana.user.username %>
+  <%=h @banana.user.username if @banana.user %>
 </p>
 
 
