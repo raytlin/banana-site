@@ -11780,3 +11780,60 @@ Processing PublicController#foundation (for 127.0.0.1 at 2010-09-05 00:00:06) [G
 Rendering template within layouts/public
 Rendering public/foundation
 Completed in 8ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/public/foundation]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-05 00:02:21) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#foundation (for 127.0.0.1 at 2010-09-05 00:02:23) [GET]
+Rendering template within layouts/public
+Rendering public/foundation
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://127.0.0.1/public/foundation]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-05 00:02:44) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#analysis (for 127.0.0.1 at 2010-09-05 00:03:23) [GET]
+  [4;35;1mBanana Load (2.9ms)[0m   [0mSELECT * FROM "bananas" [0m
+Rendering template within layouts/public
+Rendering public/analysis
+Completed in 28ms (View: 11, DB: 3) | 200 OK [http://127.0.0.1/public/analysis]
+
+
+Processing PublicController#turn_brown (for 127.0.0.1 at 2010-09-05 00:03:26) [GET]
+  [4;36;1mBanana Load (2.0ms)[0m   [0;1mSELECT * FROM "bananas" [0m
+Redirected to http://127.0.0.1:3001/public/new_tracker
+Completed in 19ms (DB: 2) | 302 Found [http://127.0.0.1/public/turn_brown]
+
+
+Processing PublicController#new_tracker (for 127.0.0.1 at 2010-09-05 00:03:27) [GET]
+  [4;35;1mBanana Load (2.0ms)[0m   [0mSELECT * FROM "bananas" [0m
+Rendering template within layouts/public
+Rendering public/new_tracker
+Completed in 36ms (View: 17, DB: 2) | 200 OK [http://127.0.0.1/public/new_tracker]
+
+
+Processing PublicController#new_tracker (for 127.0.0.1 at 2010-09-05 00:03:28) [GET]
+  [4;36;1mBanana Load (2.0ms)[0m   [0;1mSELECT * FROM "bananas" [0m
+Rendering template within layouts/public
+Rendering public/new_tracker
+Completed in 31ms (View: 14, DB: 2) | 200 OK [http://127.0.0.1/public/new_tracker]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-05 00:03:32) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-05 00:04:48) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://127.0.0.1/]
