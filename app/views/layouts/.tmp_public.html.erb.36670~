@@ -14,19 +14,6 @@
     <meta name="abstract" content="Never eat a bruised or brown banana again.®" /> 
     <meta name="robots" content="index,follow" /> 
 
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-16747345-3']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
 </head>
 <body>
 
@@ -54,6 +41,6 @@
 <%= yield %>
 
 </div>
-<div style="font-weight:bold; position:fixed; bottom:0px; left:1em; width:100%; background-color:white; height:4em; font-size:1em "> <hr /> | <%= link_to "FAQ", :action => "faq"%> | <%= link_to "The Banana Tracker Foundation", :action => "foundation"%> | <br />   </div>
+
 </body>
 </html>

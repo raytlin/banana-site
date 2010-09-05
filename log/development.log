@@ -11416,3 +11416,361 @@ Rendering bananas/index
   [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
 Completed in 82ms (View: 64, DB: 7) | 200 OK [http://127.0.0.1/bananas]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:37:15) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 7907ms (View: 7905, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#faq (for 127.0.0.1 at 2010-09-04 23:38:21) [GET]
+Rendering template within layouts/public
+Rendering public/faq
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://127.0.0.1/public/faq]
+
+
+Processing PublicController#foundation (for 127.0.0.1 at 2010-09-04 23:38:31) [GET]
+Rendering template within layouts/public
+Rendering public/foundation
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://127.0.0.1/public/foundation]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:39:10) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:40:33) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:40:35) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#new_tracker (for 127.0.0.1 at 2010-09-04 23:40:36) [GET]
+Redirected to http://127.0.0.1:3001/public/login
+Completed in 3ms (DB: 0) | 302 Found [http://127.0.0.1/public/new_tracker]
+
+
+Processing PublicController#login (for 127.0.0.1 at 2010-09-04 23:40:37) [GET]
+Rendering template within layouts/public
+Rendering public/login
+Completed in 126ms (View: 12, DB: 0) | 200 OK [http://127.0.0.1/public/login]
+
+
+Processing PublicController#turn_brown (for 127.0.0.1 at 2010-09-04 23:40:41) [GET]
+  [4;36;1mBanana Load (2.0ms)[0m   [0;1mSELECT * FROM "bananas" [0m
+Redirected to http://127.0.0.1:3001/public/login
+Completed in 29ms (DB: 2) | 302 Found [http://127.0.0.1/public/turn_brown]
+
+
+Processing PublicController#login (for 127.0.0.1 at 2010-09-04 23:40:41) [GET]
+Rendering template within layouts/public
+Rendering public/login
+Completed in 20ms (View: 9, DB: 0) | 200 OK [http://127.0.0.1/public/login]
+
+
+Processing PublicController#new_tracker (for 127.0.0.1 at 2010-09-04 23:40:43) [GET]
+Redirected to http://127.0.0.1:3001/public/login
+Completed in 2ms (DB: 0) | 302 Found [http://127.0.0.1/public/new_tracker]
+
+
+Processing PublicController#login (for 127.0.0.1 at 2010-09-04 23:40:43) [GET]
+Rendering template within layouts/public
+Rendering public/login
+Completed in 21ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/public/login]
+
+
+Processing PublicController#send_login (for 127.0.0.1 at 2010-09-04 23:40:46) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"X2TLZpJuqthH3t97XoQ/xDso8B9YGDO5DkYYjTHB1HU=", "user"=>{"username"=>"ray", "password"=>"lin"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE (username = 'ray' AND password = 'lin') LIMIT 1[0m
+Redirected to http://127.0.0.1:3001/public/turn_brown
+Completed in 18ms (DB: 0) | 302 Found [http://127.0.0.1/public/send_login]
+
+
+Processing PublicController#turn_brown (for 127.0.0.1 at 2010-09-04 23:40:46) [GET]
+  [4;36;1mBanana Load (2.0ms)[0m   [0;1mSELECT * FROM "bananas" [0m
+Redirected to http://127.0.0.1:3001/public/new_tracker
+Completed in 43ms (DB: 2) | 302 Found [http://127.0.0.1/public/turn_brown]
+
+
+Processing PublicController#new_tracker (for 127.0.0.1 at 2010-09-04 23:40:46) [GET]
+  [4;35;1mBanana Load (2.0ms)[0m   [0mSELECT * FROM "bananas" [0m
+Rendering template within layouts/public
+Rendering public/new_tracker
+Completed in 42ms (View: 24, DB: 2) | 200 OK [http://127.0.0.1/public/new_tracker]
+
+
+Processing PublicController#turn_brown (for 127.0.0.1 at 2010-09-04 23:40:50) [GET]
+  [4;36;1mBanana Load (2.0ms)[0m   [0;1mSELECT * FROM "bananas" [0m
+Redirected to http://127.0.0.1:3001/public/new_tracker
+Completed in 19ms (DB: 2) | 302 Found [http://127.0.0.1/public/turn_brown]
+
+
+Processing PublicController#new_tracker (for 127.0.0.1 at 2010-09-04 23:40:50) [GET]
+  [4;35;1mBanana Load (2.0ms)[0m   [0mSELECT * FROM "bananas" [0m
+Rendering template within layouts/public
+Rendering public/new_tracker
+Completed in 34ms (View: 16, DB: 2) | 200 OK [http://127.0.0.1/public/new_tracker]
+
+
+Processing PublicController#analysis (for 127.0.0.1 at 2010-09-04 23:40:52) [GET]
+  [4;36;1mBanana Load (2.0ms)[0m   [0;1mSELECT * FROM "bananas" [0m
+Rendering template within layouts/public
+Rendering public/analysis
+Completed in 41ms (View: 28, DB: 2) | 200 OK [http://127.0.0.1/public/analysis]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:40:56) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:41:38) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 15ms (View: 14, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#turn_brown (for 127.0.0.1 at 2010-09-04 23:41:39) [GET]
+  [4;35;1mBanana Load (2.0ms)[0m   [0mSELECT * FROM "bananas" [0m
+Redirected to http://127.0.0.1:3001/public/new_tracker
+Completed in 18ms (DB: 2) | 302 Found [http://127.0.0.1/public/turn_brown]
+
+
+Processing PublicController#new_tracker (for 127.0.0.1 at 2010-09-04 23:41:40) [GET]
+  [4;36;1mBanana Load (2.0ms)[0m   [0;1mSELECT * FROM "bananas" [0m
+Rendering template within layouts/public
+Rendering public/new_tracker
+Completed in 32ms (View: 15, DB: 2) | 200 OK [http://127.0.0.1/public/new_tracker]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:41:40) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:42:09) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#new_tracker (for 127.0.0.1 at 2010-09-04 23:42:11) [GET]
+  [4;35;1mBanana Load (2.9ms)[0m   [0mSELECT * FROM "bananas" [0m
+Rendering template within layouts/public
+Rendering public/new_tracker
+Completed in 34ms (View: 15, DB: 3) | 200 OK [http://127.0.0.1/public/new_tracker]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:42:12) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:42:21) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#new_tracker (for 127.0.0.1 at 2010-09-04 23:42:23) [GET]
+  [4;36;1mBanana Load (2.9ms)[0m   [0;1mSELECT * FROM "bananas" [0m
+Rendering template within layouts/public
+Rendering public/new_tracker
+Completed in 91ms (View: 14, DB: 3) | 200 OK [http://127.0.0.1/public/new_tracker]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:42:24) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:43:52) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 14ms (View: 13, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:43:56) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:44:26) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:45:45) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:45:46) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:46:10) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 15ms (View: 14, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:46:13) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:46:24) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 76ms (View: 73, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:46:26) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:46:41) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:46:44) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:46:46) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:47:11) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:47:12) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:48:14) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:48:16) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:48:42) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 71ms (View: 69, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:48:44) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:48:47) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:49:07) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:49:27) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:49:28) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:49:36) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#faq (for 127.0.0.1 at 2010-09-04 23:49:56) [GET]
+Rendering template within layouts/public
+Rendering public/faq
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://127.0.0.1/public/faq]
+
+
+Processing PublicController#foundation (for 127.0.0.1 at 2010-09-04 23:49:59) [GET]
+Rendering template within layouts/public
+Rendering public/foundation
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/public/foundation]
+
+
+Processing PublicController#foundation (for 127.0.0.1 at 2010-09-04 23:50:24) [GET]
+Rendering template within layouts/public
+Rendering public/foundation
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/public/foundation]
+
+
+Processing PublicController#foundation (for 127.0.0.1 at 2010-09-04 23:51:00) [GET]
+Rendering template within layouts/public
+Rendering public/foundation
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/public/foundation]
+
+
+Processing PublicController#new_tracker (for 127.0.0.1 at 2010-09-04 23:51:03) [GET]
+Redirected to http://127.0.0.1:3001/public/login
+Completed in 3ms (DB: 0) | 302 Found [http://127.0.0.1/public/new_tracker]
+
+
+Processing PublicController#login (for 127.0.0.1 at 2010-09-04 23:51:03) [GET]
+Rendering template within layouts/public
+Rendering public/login
+Completed in 20ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/public/login]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:51:04) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/]

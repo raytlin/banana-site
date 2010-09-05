@@ -155,4 +155,12 @@ end
       redirect_to(:action => "index") and return
     end  
   end
+  
+  def faq
+    
+  end
+  
+  def foundation
+    
+  end
 end 
