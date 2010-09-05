@@ -35,17 +35,17 @@
 	hallo! <%= session[:user_name] %>
 <% end -%>	
 <% if session[:user_id] -%>	
- | <%= link_to('log out', {:controller => 'public', :action => 'logout'}, :class => "footercolor" )%> |  
+ | <%= link_to('log out', :controller => 'public', :action => 'logout' )%> |  
 <% else -%>
- | <%= link_to('sign up!', {:controller => 'public', :action => 'new_user'}, :class => "footercolor" )%> | <%= link_to('log in', {:controller => 'public', :action => 'login'}, :class => "footercolor" )%> | 
+ | <%= link_to('sign up!', :controller => 'public', :action => 'new_user' )%> | <%= link_to('log in', :controller => 'public', :action => 'login' )%> | 
 <% end -%> 
-| <%= link_to("Home", {:controller => 'public', :action => 'index'}, :class => "footercolor" )%> |
+| <%= link_to("Home", :controller => 'public', :action => 'index' )%> |
 </p>
 
 <%= link_to( image_tag("../images/banana-logo.png", :border=>0), :action => "index") %>
 
 <div id="linkbar" >
-<p style="font-weight:bolder; position:relative; top:1px; font-size:1.2em"> <strong> | <%= link_to("MAKE NEW TRACKER", {:action => "new_tracker"}, :class => "linkcolor") %> | <%= link_to("FINISH TRACKER IN PROGRESS", {:action => "turn_brown"}, :class => "linkcolor" )%> | <%= link_to("VIEW BANANA ANALYSIS", {:action => "analysis"}, :class => "linkcolor")%> | </strong></p>
+<p style="font-weight:bolder; position:relative; top:1px; font-size:1.2em"> | <%= link_to("MAKE NEW TRACKER", {:action => "new_tracker"}, :class => "linkcolor") %> | <%= link_to("FINISH TRACKER IN PROGRESS", {:action => "turn_brown"}, :class => "linkcolor" )%> | <%= link_to("VIEW BANANA ANALYSIS", {:action => "analysis"}, :class => "linkcolor")%> | </p>
 </div>
 <p style="color: green"><%= notice %></p>
 
@@ -54,6 +54,6 @@
 <%= yield %>
 
 </div>
-<div style="font-weight:bold; position:fixed; bottom:0px; left:1em; width:100%; background-color:white; height:4em; font-size:1em "> <hr /> | <%= link_to("FAQ", {:action => "faq"}, :class => "footercolor") %> | <%= link_to("The Banana Tracker Foundation", {:action => "foundation"}, :class => "footercolor")%> | <br />   </div>
+<div style="font-weight:bold; position:fixed; bottom:0px; left:1em; width:100%; background-color:white; height:4em; font-size:1em "> <hr /> | <%= link_to "FAQ", :action => "faq"%> | <%= link_to "The Banana Tracker Foundation", :action => "foundation"%> | <br />   </div>
 </body>
 </html>

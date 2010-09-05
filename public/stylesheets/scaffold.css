@@ -82,4 +82,6 @@ a.linkcolor:hover {color:white; text-decoration:underline; background-color:blac
 a.linkcolor:visited {	color:white; text-decoration:underline; font-weight:bolder; }	
 a.linkcolor:active {color:white; text-decoration:underline; background-color:black}
 	
+a.footercolor:hover {color:white; background-color:black; }
+	
 #footer { position:absolute; bottom:10px; text-align:center; }
