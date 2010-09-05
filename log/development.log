@@ -11774,3 +11774,9 @@ Processing PublicController#index (for 127.0.0.1 at 2010-09-04 23:51:04) [GET]
 Rendering template within layouts/public
 Rendering public/index
 Completed in 7ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#foundation (for 127.0.0.1 at 2010-09-05 00:00:06) [GET]
+Rendering template within layouts/public
+Rendering public/foundation
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/public/foundation]
