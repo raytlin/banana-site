@@ -52,7 +52,7 @@ class PublicController < ApplicationController
       for banana in @bananas 
         if banana.user_id == session[:user_id]
           if banana.when_brown == nil
-            flash[:notice] = "You already have an exisitng tracker in progress so you can't make another one unitl you finish your old one!"
+            flash[:notice] = "You already have an exisitng optimization tracker in progress so you can't make another one unitl you finish your old one!"
             redirect_to(:action => "turn_brown")
           else
             @banana = Banana.new 
@@ -70,7 +70,7 @@ class PublicController < ApplicationController
     end   
     
     else
-      flash[:notice] = "You're gonna have to log in if you want to make a new banana tracker!"
+      flash[:notice] = "You're gonna have to log in if you want to make a new banana optimizer!"
       redirect_to(:action => "login" )
     end
   end
@@ -85,15 +85,15 @@ class PublicController < ApplicationController
         redirect_to(:action => "new_tracker")
       else
           if @banana.save 
-            flash[:notice] = "New banana tracker being tracked, I guess!"
+            flash[:notice] = "New banana optimization being tracked, I guess!"
             redirect_to(:action => "tracker_instructions")
           else
-            flash[:notice] = "banana tracker thing didn't make for some reason. I blame you."
+            flash[:notice] = "banana optimization tracker thing didn't make for some reason. I blame you."
             render(:action => "new_tracker" )
           end
         end  
         else 
-          flash[:notice] = "ERROR!!!: Well you can't make a new tracker if you're not logged in now can you?"
+          flash[:notice] = "ERROR!!!: Well you can't make a new optimizer if you're not logged in now can you?"
           redirect_to( :action => "index")
       
   end
@@ -125,7 +125,7 @@ end
   end
   
   
-          flash[:notice] = "you don't have any unfinished trackers. make a new one , i guess?"
+          flash[:notice] = "you don't have any unfinished optimizers. make a new one , i guess?"
           redirect_to(:action => "new_tracker" ) and return
   
  end

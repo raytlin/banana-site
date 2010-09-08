@@ -4,14 +4,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-  <title>Banana Optimizer: <%= controller.action_name %></title>
+  <title>Banana Tracker: <%= controller.action_name %></title>
   <%= stylesheet_link_tag 'scaffold' %>
 <link rel="Shortcut Icon" href="../images/favicon.ico" /> 
 <link rel="Bookmark" href="../images/favicon.ico" /> 
 
-<meta name="keywords" content="banana optimizer, bananas, banana" /> 
-    <meta name="description" content="Banana Optimization for the rest of us.®" /> 
-    <meta name="abstract" content="Banana Optimization for the rest of us.®" /> 
+<meta name="keywords" content="banana tracker, bananas, banana" /> 
+    <meta name="description" content="Never eat a bruised or brown banana again.®" /> 
+    <meta name="abstract" content="Never eat a bruised or brown banana again.®" /> 
     <meta name="robots" content="index,follow" /> 
 
 <script type="text/javascript">
@@ -45,7 +45,7 @@
 <%= link_to( image_tag("../images/banana-logo.png", :border=>0), :action => "index") %>
 
 <div id="linkbar" >
-<p style="font-weight:bolder; position:relative; top:1px; font-size:1.2em"> <strong> | <%= link_to("MAKE NEW OPTIMIZER", {:action => "new_tracker"}, :class => "linkcolor") %> | <%= link_to("FINISH OPTIMIZATION IN PROGRESS", {:action => "turn_brown"}, :class => "linkcolor" )%> | <%= link_to("VIEW BANANA ANALYSIS", {:action => "analysis"}, :class => "linkcolor")%> | </strong></p>
+<p style="font-weight:bolder; position:relative; top:1px; font-size:1.2em"> <strong> | <%= link_to("MAKE NEW TRACKER", {:action => "new_tracker"}, :class => "linkcolor") %> | <%= link_to("FINISH TRACKER IN PROGRESS", {:action => "turn_brown"}, :class => "linkcolor" )%> | <%= link_to("VIEW BANANA ANALYSIS", {:action => "analysis"}, :class => "linkcolor")%> | </strong></p>
 </div>
 <p style="color: green"><%= notice %></p>
 
@@ -54,6 +54,6 @@
 <%= yield %>
 
 </div>
-<div style="font-weight:bold; position:fixed; bottom:0px; left:1em; width:100%; background-color:white; height:4em; font-size:1em "> <hr /> | <%= link_to("FAQ", {:action => "faq"}, :class => "footercolor") %> | <%= link_to("The Open Banana Optimizer Foundation", {:action => "foundation"}, :class => "footercolor")%> | <br />   </div>
+<div style="font-weight:bold; position:fixed; bottom:0px; left:1em; width:100%; background-color:white; height:4em; font-size:1em "> <hr /> | <%= link_to("FAQ", {:action => "faq"}, :class => "footercolor") %> | <%= link_to("The Banana Tracker Foundation", {:action => "foundation"}, :class => "footercolor")%> | <br />   </div>
 </body>
 </html>

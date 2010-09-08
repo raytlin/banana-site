@@ -12503,3 +12503,204 @@ Processing PublicController#index (for 127.0.0.1 at 2010-09-05 00:42:13) [GET]
 Rendering template within layouts/public
 Rendering public/index
 Completed in 8ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-08 15:03:49) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 7930ms (View: 7928, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-08 15:05:44) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-08 15:05:46) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-08 15:06:58) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 13ms (View: 12, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#new_tracker (for 127.0.0.1 at 2010-09-08 15:06:59) [GET]
+Redirected to http://127.0.0.1:3001/public/login
+Completed in 2ms (DB: 0) | 302 Found [http://127.0.0.1/public/new_tracker]
+
+
+Processing PublicController#login (for 127.0.0.1 at 2010-09-08 15:07:00) [GET]
+Rendering template within layouts/public
+Rendering public/login
+Completed in 143ms (View: 28, DB: 0) | 200 OK [http://127.0.0.1/public/login]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-08 15:09:27) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#turn_brown (for 127.0.0.1 at 2010-09-08 15:09:31) [GET]
+  [4;36;1mBanana Load (2.0ms)[0m   [0;1mSELECT * FROM "bananas" [0m
+Redirected to http://127.0.0.1:3001/public/login
+Completed in 32ms (DB: 2) | 302 Found [http://127.0.0.1/public/turn_brown]
+
+
+Processing PublicController#login (for 127.0.0.1 at 2010-09-08 15:09:31) [GET]
+Rendering template within layouts/public
+Rendering public/login
+Completed in 20ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/public/login]
+
+
+Processing PublicController#new_tracker (for 127.0.0.1 at 2010-09-08 15:09:33) [GET]
+Redirected to http://127.0.0.1:3001/public/login
+Completed in 3ms (DB: 0) | 302 Found [http://127.0.0.1/public/new_tracker]
+
+
+Processing PublicController#login (for 127.0.0.1 at 2010-09-08 15:09:33) [GET]
+Rendering template within layouts/public
+Rendering public/login
+Completed in 79ms (View: 8, DB: 0) | 200 OK [http://127.0.0.1/public/login]
+
+
+Processing PublicController#analysis (for 127.0.0.1 at 2010-09-08 15:09:35) [GET]
+  [4;35;1mBanana Load (2.0ms)[0m   [0mSELECT * FROM "bananas" [0m
+Rendering template within layouts/public
+Rendering public/analysis
+Completed in 45ms (View: 32, DB: 2) | 200 OK [http://127.0.0.1/public/analysis]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-08 15:13:21) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#analysis (for 127.0.0.1 at 2010-09-08 15:13:22) [GET]
+  [4;36;1mBanana Load (2.0ms)[0m   [0;1mSELECT * FROM "bananas" [0m
+Rendering template within layouts/public
+Rendering public/analysis
+Completed in 31ms (View: 18, DB: 2) | 200 OK [http://127.0.0.1/public/analysis]
+
+
+Processing PublicController#login (for 127.0.0.1 at 2010-09-08 15:13:23) [GET]
+Rendering template within layouts/public
+Rendering public/login
+Completed in 20ms (View: 9, DB: 0) | 200 OK [http://127.0.0.1/public/login]
+
+
+Processing PublicController#send_login (for 127.0.0.1 at 2010-09-08 15:13:26) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"XdVrM3EeGiONwlFK/f9yiKcU3KN0DpWof7r0teX3KZE=", "user"=>{"username"=>"ray", "password"=>"lin"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE (username = 'ray' AND password = 'lin') LIMIT 1[0m
+Redirected to http://127.0.0.1:3001/public/turn_brown
+Completed in 16ms (DB: 0) | 302 Found [http://127.0.0.1/public/send_login]
+
+
+Processing PublicController#turn_brown (for 127.0.0.1 at 2010-09-08 15:13:26) [GET]
+  [4;36;1mBanana Load (2.0ms)[0m   [0;1mSELECT * FROM "bananas" [0m
+Redirected to http://127.0.0.1:3001/public/new_tracker
+Completed in 44ms (DB: 2) | 302 Found [http://127.0.0.1/public/turn_brown]
+
+
+Processing PublicController#new_tracker (for 127.0.0.1 at 2010-09-08 15:13:26) [GET]
+  [4;35;1mBanana Load (2.0ms)[0m   [0mSELECT * FROM "bananas" [0m
+Rendering template within layouts/public
+Rendering public/new_tracker
+Completed in 45ms (View: 29, DB: 2) | 200 OK [http://127.0.0.1/public/new_tracker]
+
+
+Processing PublicController#analysis (for 127.0.0.1 at 2010-09-08 15:13:30) [GET]
+  [4;36;1mBanana Load (2.0ms)[0m   [0;1mSELECT * FROM "bananas" [0m
+Rendering template within layouts/public
+Rendering public/analysis
+Completed in 25ms (View: 12, DB: 2) | 200 OK [http://127.0.0.1/public/analysis]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-08 15:14:26) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#new_tracker (for 127.0.0.1 at 2010-09-08 15:14:27) [GET]
+  [4;35;1mBanana Load (2.0ms)[0m   [0mSELECT * FROM "bananas" [0m
+Rendering template within layouts/public
+Rendering public/new_tracker
+Completed in 37ms (View: 19, DB: 2) | 200 OK [http://127.0.0.1/public/new_tracker]
+
+
+Processing PublicController#turn_brown (for 127.0.0.1 at 2010-09-08 15:14:28) [GET]
+  [4;36;1mBanana Load (2.0ms)[0m   [0;1mSELECT * FROM "bananas" [0m
+Redirected to http://127.0.0.1:3001/public/new_tracker
+Completed in 17ms (DB: 2) | 302 Found [http://127.0.0.1/public/turn_brown]
+
+
+Processing PublicController#new_tracker (for 127.0.0.1 at 2010-09-08 15:14:28) [GET]
+  [4;35;1mBanana Load (2.0ms)[0m   [0mSELECT * FROM "bananas" [0m
+Rendering template within layouts/public
+Rendering public/new_tracker
+Completed in 52ms (View: 15, DB: 2) | 200 OK [http://127.0.0.1/public/new_tracker]
+
+
+Processing PublicController#analysis (for 127.0.0.1 at 2010-09-08 15:14:29) [GET]
+  [4;36;1mBanana Load (2.0ms)[0m   [0;1mSELECT * FROM "bananas" [0m
+Rendering template within layouts/public
+Rendering public/analysis
+Completed in 30ms (View: 17, DB: 2) | 200 OK [http://127.0.0.1/public/analysis]
+
+
+Processing PublicController#foundation (for 127.0.0.1 at 2010-09-08 15:14:34) [GET]
+Rendering template within layouts/public
+Rendering public/foundation
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://127.0.0.1/public/foundation]
+
+
+Processing PublicController#faq (for 127.0.0.1 at 2010-09-08 15:14:54) [GET]
+Rendering template within layouts/public
+Rendering public/faq
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://127.0.0.1/public/faq]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-08 15:15:16) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#new_tracker (for 127.0.0.1 at 2010-09-08 15:15:18) [GET]
+  [4;35;1mBanana Load (2.0ms)[0m   [0mSELECT * FROM "bananas" [0m
+Rendering template within layouts/public
+Rendering public/new_tracker
+Completed in 95ms (View: 78, DB: 2) | 200 OK [http://127.0.0.1/public/new_tracker]
+
+
+Processing PublicController#turn_brown (for 127.0.0.1 at 2010-09-08 15:15:20) [GET]
+  [4;36;1mBanana Load (2.0ms)[0m   [0;1mSELECT * FROM "bananas" [0m
+Redirected to http://127.0.0.1:3001/public/new_tracker
+Completed in 16ms (DB: 2) | 302 Found [http://127.0.0.1/public/turn_brown]
+
+
+Processing PublicController#new_tracker (for 127.0.0.1 at 2010-09-08 15:15:20) [GET]
+  [4;35;1mBanana Load (2.0ms)[0m   [0mSELECT * FROM "bananas" [0m
+Rendering template within layouts/public
+Rendering public/new_tracker
+Completed in 30ms (View: 14, DB: 2) | 200 OK [http://127.0.0.1/public/new_tracker]
+
+
+Processing PublicController#analysis (for 127.0.0.1 at 2010-09-08 15:15:21) [GET]
+  [4;36;1mBanana Load (2.0ms)[0m   [0;1mSELECT * FROM "bananas" [0m
+Rendering template within layouts/public
+Rendering public/analysis
+Completed in 31ms (View: 18, DB: 2) | 200 OK [http://127.0.0.1/public/analysis]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-08 15:15:23) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/]
