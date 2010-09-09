@@ -12704,3 +12704,21 @@ Processing PublicController#index (for 127.0.0.1 at 2010-09-08 15:15:23) [GET]
 Rendering template within layouts/public
 Rendering public/index
 Completed in 7ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-08 17:45:08) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 7257ms (View: 7254, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-08 17:45:18) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-09-08 17:45:34) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/]
