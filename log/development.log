@@ -12880,3 +12880,25 @@ Processing PublicController#index (for 127.0.0.1 at 2010-12-12 20:24:25) [GET]
 Rendering template within layouts/public
 Rendering public/index
 Completed in 53ms (View: 52, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PublicController#index (for 127.0.0.1 at 2011-01-30 21:47:17) [GET]
+Rendering template within layouts/public
+Rendering public/index
+Completed in 44ms (View: 43, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-30 21:48:31) [GET]
+
+ActionController::RoutingError (No route matches "/feels-so-good-landscape.pdf" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-30 21:49:34) [GET]
+
+ActionController::RoutingError (No route matches "/feels.pdf" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
